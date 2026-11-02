@@ -74,8 +74,7 @@ y_raw = data_encoded['Profit'].values.reshape(-1, 1)
 print("Shape of features:", X_raw.shape)
 print("Shape of target:", y_raw.shape)
 ```
-<img width="306" height="62" alt="image" src="https://github.com/user-attachments/assets/42a17d75-f0cc-4c08-a8a6-
-0fc14f27ddab" />
+<img width="306" height="62" alt="image" src="https://github.com/user-attachments/assets/42a17d75-f0cc-4c08-a8a6-0fc14f27ddab" />
 
 ```
 X_scaler = StandardScaler()
@@ -139,6 +138,7 @@ print(theta.flatten())
 ```
 
 <img width="651" height="312" alt="image" src="https://github.com/user-attachments/assets/544bec23-a4ac-4c8b-8091-5d844744d0aa" />
+
 ```
 plt.figure(figsize=(7,4))
 plt.plot(J_hist)
@@ -181,7 +181,6 @@ pred_original = y_scaler.inverse_transform(scaled_pred)
 print(f"\nPredicted Profit for the new startup: ₹{pred_original[0][0]:,.2f}")
 
 ```
-
 
 <img width="766" height="82" alt="image" src="https://github.com/user-attachments/assets/837d3f51-3d7f-4afc-88d2-1e0b9e7df4af" />
 
